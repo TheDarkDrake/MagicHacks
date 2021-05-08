@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Project</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+</embed>
+<style>
+    body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+  
+  .pimg1, .pimg2, .pimg3, .pimg4{
+    position:relative;
+    opacity:1;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+  
+    /*
+      fixed = parallax
+      scroll = normal
+    */
+    background-attachment:fixed;
+  }
+  
+  .pimg1{
+    background-image:url(images/home.jpg);
+    min-height:100%;
+  }
+  
+  .pimg2{
+    background-image:url(images/home_pagehp.jpg);
+    min-height:400px;
+    ;
+  }
+  
+  .pimg3{
+    background-image:url(images/doctor_strange.jpg);
+    min-height:400px;
+  }
+  
+  .pimg4{
+    background-image:url(images/last.jpg);
+    min-height: 100%;
+    ;
+  }
+  .section{
+    text-align:center;
+    padding:50px 80px;
+  }
+  
+  .section-light{
+    background-color:#f4f4f4;
+    color:#666;
+  }
+  
+  .section-dark{
+    background-color:#282e34;
+    color:#ddd;
+  }
+  
+  .ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform:uppercase;
+  }
+  
+  .ptext .border{
+    background-color:#111;
+    color:#fff;
+    padding:20px;
+  }
+  
+  .ptext .border.trans{
+    background-color:transparent;
+  }
+  
+  @media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+  
+  .btn1{
+    background-color:transparent ;
+    color: #fff;
+  }
+
+  a:link {
+  color: green;
+ 
+  text-decoration: none;
+}
+
+footer {
+    width: 100%;
+    color: rgb(0, 0, 0) !important;
+    background: #687FF2;
+    padding: 1em 0;
+}
+
+.Audio{
+        display:none;
+    }
+
+</style>
+
+<body>
+  <div class="pimg1">
+    <div class="ptext">
+      <span class="border">
+        Magic Knights
+        
+      </span>
+    </div>
+  </div>
+
+
+
+  <section class="section section-light">
+    <h2>POTTERHEADS</h2>
+    <p>
+        We have followed Harry on his journey from when he came to know the truth about himself, the fact that he is a Wizard, through his life and experiences at Hogwarts and his final battle against Lord Voldemort at the Hogwarts Castle. He has grown into a steely lad, a lot different from where he started off, and so have you. You have gained knowledge about the world of “Harry Potter”. Let’s test the amount of knowledge you have gained throughout this journey
+    </p>
+    
+  </section>
+
+  <div class="pimg2">
+    <div class="ptext">
+      <span class="border trans">
+        POTTERHEADS
+        <br>
+        <button type="button" name="button" id="btn" class="btn1"><a href="hpquiz.html"><p style="color:white">Let's Hop into Hogwarts</p></a></button>
+      </span>
+    </div>
+    
+  </div>
+
+  <section class="section section-dark">
+    <h2>Doctor Strange Fans</h2>
+    <p>
+        Dr. Stephen Strange M.D., Ph.D., is the sorcerer and a Master of the Mystic Arts, originally a brilliant, although arrogant, surgeon. We watched how he underwent a transition from a successful and perfect Doctor to someone who lost everything as he meets with an accident and finally ends up at Kamar Taj discovering new things beyond his imagination. His wisdom saved the Earth from the undefeatable monster of the Dark Dimension, Dormamu. He was the one who added a magical beginning to the Marvel Universe.  Now, let’s see how much you remember about the ventures of         Dr. Strange without using any magic.
+    </p>
+    
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext">
+      <span class="border trans">
+        Doctor Strange
+        <br>
+        <button type="button" name="button" id="btn2" class="btn1"><a href="drstrangequiz.html"><p style="color:white">Here we come- Kamar-Taj</p></a></button>
+      </span>
+    </div>
+  </div>
+
+  <section class="section section-dark">
+    <h2>Rules!</h2>
+      <p>- Try Finding out the answer without Googling </p>
+       <p>- Dont panic seeing weird texts in place of the question. That's just to make it look more interesting. The question is embedded and you have to find it by inspecting the webpage. </p>  
+       <p>- Better take some Felix Felicis before attempting the quiz. </p> 
+   
+  </section>
+
+  <div class="pimg4">
+    <div class="ptext">
+      <span class="border trans">
+        Don't be afraid to perform any ritual!
+        
+      </span>
+    </div>
+  </div>
+
+  <div id="audio" class="Audio"> 
+    <audio src="bgm_home_page.mp3" controls>
+       
+        </audio>
+
+
+            
+</div>
+
+  <footer>
+    <div  align="center">
+        Made with <span style="color: black">&hearts;</span> by Magic Knights
+    </div>
+</footer>
+</body>
+</html>
